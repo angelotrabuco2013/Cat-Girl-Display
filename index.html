@@ -35,7 +35,7 @@
     <script>
         console.log("Loaded body script");
         const inject = document.createElement('cat-girl-counter');
-        document.getElementById("counter").appendChild(placeHolder);
+        document.getElementById("counter").appendChild(inject);
         inject.count = Math.floor(Math.random() * (1000 - 1 + 1)) + 1; // This just randomly generates a number from 1 - 1000
     </script>
     
@@ -46,7 +46,7 @@
     &lt;script&gt;
         console.log(&quot;Loaded body script&quot;);
         const inject = document.createElement(&#39;cat-girl-counter&#39;);
-        document.getElementById(&quot;counter&quot;).appendChild(placeHolder);
+        document.getElementById(&quot;counter&quot;).appendChild(inject);
         inject.count = Math.floor(Math.random() * (1000 - 1 + 1)) + 1; // This just randomly generates a number from 1 - 1000
     &lt;/script&gt;
 </pre></div><br>
