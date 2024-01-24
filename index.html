@@ -34,31 +34,21 @@
     <div id="counter"></div>
     <script>
         console.log("Loaded body script");
-        const placeHolder = document.createElement('cat-girl-counter');
+        const inject = document.createElement('cat-girl-counter');
         document.getElementById("counter").appendChild(placeHolder);
-        placeHolder.count = Math.floor(Math.random() * (100 - 1 + 1)) + 1; // This just randomly generates a number from 1 - 100
+        inject.count = Math.floor(Math.random() * (1000 - 1 + 1)) + 1; // This just randomly generates a number from 1 - 1000
     </script>
     
 
 </demo><h6>HTML for this demo:</h6><div class="codebox"><pre>
-&lt;!DOCTYPE&nbsp;html&gt;
-&lt;html&nbsp;lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&nbsp;charset=&quot;UTF&#45;8&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&nbsp;http&#45;equiv=&quot;X&#45;UA&#45;Compatible&quot;&nbsp;content=&quot;IE=edge&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;viewport&quot;&nbsp;content=&quot;width=device&#45;width,&nbsp;initial&#45;scale=1.0&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Demo&lt;/title&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;src=&quot;https://surv.is-a.dev/Cat&#45;Girl&#45;Display/cat&#45;girl&#45;counter.min.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id=&quot;counter&quot;&gt;&lt;/div&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Loaded&nbsp;body&nbsp;script&quot;);
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;placeHolder&nbsp;=&nbsp;document.createElement(&#39;cat&#45;girl&#45;counter&#39;);
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(&quot;counter&quot;).appendChild(placeHolder);
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeHolder.count&nbsp;=&nbsp;Math.floor(Math.random()&nbsp;*&nbsp;(100&nbsp;&#45;&nbsp;1&nbsp;+&nbsp;1))&nbsp;+&nbsp;1;&nbsp;&nbsp;//&nbsp;This&nbsp;just&nbsp;randomly&nbsp;generates&nbsp;a&nbsp;number&nbsp;from&nbsp;1&nbsp;&#45;&nbsp;100.
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;
-&lt;/body&gt;&lt;/html&gt;
+  &lt;script src=&quot;cat-girl-counter.min.js&quot;&gt;&lt;/script&gt;
+    &lt;div id=&quot;counter&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;
+        console.log(&quot;Loaded body script&quot;);
+        const inject = document.createElement(&#39;cat-girl-counter&#39;);
+        document.getElementById(&quot;counter&quot;).appendChild(placeHolder);
+        inject.count = Math.floor(Math.random() * (1000 - 1 + 1)) + 1; // This just randomly generates a number from 1 - 1000
+    &lt;/script&gt;
 </pre></div><br>
 <pre>
 To use this put the script tag at the bottom of the head element without any tags like async or defer,
